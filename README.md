@@ -7,6 +7,8 @@
 Made with React.js, bootstrapped with CRA.  
 Design is inspired my Lucas Pope's games.
 
+---
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,6 +16,8 @@ In the project directory, you can run:
 ### `npm start`
 
 ### `npm run build`
+
+---
 
 ## Learn More
 
