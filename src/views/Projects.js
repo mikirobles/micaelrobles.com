@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../components/Card";
 import Title from "../components/Title";
-import { breakpoints, images, projects } from "../helpers/contants";
+import { breakpoints, images, projects, links } from "../helpers/contants";
 import CloseButton from "../components/CloseButton";
 
 const ProjectsCard = styled(Card)`
@@ -16,15 +16,25 @@ const ProjectsCard = styled(Card)`
     margin-top: 5px;
     text-transform: uppercase;
   }
+  ul li:not(:last-child) {
+    border-bottom: 2px solid var(--cream);
+  }
+
+  .github {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: inherit;
+  }
 
   .project {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 15px 0;
-    border-bottom: 2px solid var(--cream);
+
     > span:first-child {
-      margin-right: 10px;
+      margin-right: 20px;
       font-weight: bold;
       min-width: 145px;
       text-align: right;
@@ -71,13 +81,22 @@ const Project = ({ name, description, link, code }) => (
       <p>{description}</p>
       <div className="col">
         {link && (
-          <a className="visit" href={link}>
+          <a
+            className="visit"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={link}
+          >
             Visit
           </a>
         )}
-
         {code && (
-          <a className="code" href={code}>
+          <a
+            className="code"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={code}
+          >
             <span>see code</span>
           </a>
         )}
@@ -93,6 +112,14 @@ function Projects() {
       <CloseButton href="/" />
       <p className="subtitle">Cool things I once did:</p>
       <ul>{projects.map(Project)}</ul>
+      <a
+        href={links.github}
+        rel="noopener noreferrer"
+        target="_blank"
+        className="github"
+      >
+        - Find more on Github -
+      </a>
     </ProjectsCard>
   );
 }
