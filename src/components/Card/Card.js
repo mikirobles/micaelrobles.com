@@ -35,7 +35,8 @@ const CardWrapper = styled(CardPosed)`
     border-radius: 12px;
     width: 100%;
     max-width: 613px;
-    min-height: 376px;
+    height: 376px;
+    overflow: scroll;
     position: relative;
   }
 `;

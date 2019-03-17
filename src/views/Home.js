@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import styled from "styled-components";
 import Card from "../components/Card";
-import { images, breakpoints, links } from "../helpers/contants";
+import { images, breakpoints, links, routes } from "../helpers/contants";
 
 const HomeCard = styled(Card)`
   h1,
@@ -111,20 +111,13 @@ function Home() {
       </div>
 
       <ul>
-        <li>
-          <span>
-            <Link to="/about">About</Link>{" "}
-          </span>
-        </li>
-        <li>
-          <span>Projects</span>
-        </li>
-        <li>
-          <span>Blog</span>
-        </li>
-        <li>
-          <span>Contact</span>
-        </li>
+        {routes.map(({ name, href }) => (
+          <li>
+            <span>
+              <Link to={href}>{name}</Link>
+            </span>
+          </li>
+        ))}
       </ul>
     </HomeCard>
   );
