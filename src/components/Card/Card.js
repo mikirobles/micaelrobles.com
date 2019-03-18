@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import posed from "react-pose";
+import { breakpoints } from "../../helpers/contants";
 
 const CardPosed = posed.div({
   enter: {
@@ -26,6 +27,7 @@ const CardWrapper = styled(CardPosed)`
   left: 0;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   .card {
@@ -35,9 +37,13 @@ const CardWrapper = styled(CardPosed)`
     border-radius: 12px;
     width: 100%;
     max-width: 613px;
-    height: 376px;
+    min-height: 376px;
     overflow: scroll;
     position: relative;
+  }
+  @media ${breakpoints.mobile} {
+    justify-content: flex-start;
+    padding-top: 30px;
   }
 `;
 

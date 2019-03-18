@@ -25,7 +25,7 @@ export const routes = [
   },
   {
     name: "Blog",
-    href: "/blog"
+    href: "https://blog.micaelrobles.com/"
   },
   {
     name: "Contact",

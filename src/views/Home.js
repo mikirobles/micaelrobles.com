@@ -112,9 +112,13 @@ function Home() {
 
       <ul>
         {routes.map(({ name, href }) => (
-          <li>
+          <li key={name}>
             <span>
-              <Link to={href}>{name}</Link>
+              {href[0] === "/" ? (
+                <Link to={href}>{name}</Link>
+              ) : (
+                <a href={href}>{name}</a>
+              )}
             </span>
           </li>
         ))}

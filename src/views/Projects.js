@@ -71,11 +71,28 @@ const ProjectsCard = styled(Card)`
   @media ${breakpoints.mobile} {
     align-items: flex-start;
     overflow: scroll;
+    .subtitle {
+      font-size: 0.75rem;
+    }
+    .project {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 15px 0;
+        text-align: justify;
+      }
+      & > span:first-child {
+        min-width: unset;
+        text-align: center;
+        margin: 0;
+      }
+    }
   }
 `;
 
 const Project = ({ name, description, link, code }) => (
-  <li>
+  <li key={name}>
     <div className="project">
       <span>{name}</span>
       <p>{description}</p>

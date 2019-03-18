@@ -4,6 +4,7 @@ import posed, { PoseGroup } from "react-pose";
 import Home from "./views/Home";
 import About from "./views/About";
 import Projects from "./views/Projects";
+import Contact from "./views/Contact";
 
 const RouteContainer = posed.div({
   enter: {
@@ -35,6 +36,7 @@ class App extends Component {
         <PosedRouter>
           <About path="/about" />
           <Projects path="/projects" />
+          <Contact path="/contact" />
         </PosedRouter>
       </>
     );
