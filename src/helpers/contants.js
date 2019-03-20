@@ -49,7 +49,7 @@ export const projects = [
   {
     name: "Vinco",
     description: "Made with Vue.js, has some very cool animations",
-    link: "https://vinco.me"
+    link: "http://vinco.me"
   },
   {
     name: "Supermarket List",
