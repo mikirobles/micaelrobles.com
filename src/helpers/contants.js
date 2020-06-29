@@ -41,12 +41,6 @@ export const links = {
 
 export const projects = [
   {
-    name: "Elektralabs",
-    description:
-      "Made with Next.js, has Airtable integrations and a slick design!",
-    link: "https://elektralabs.com"
-  },
-  {
     name: "Vinco",
     description: "Made with Vue.js, has some very cool animations",
     link: "http://vinco.me"
