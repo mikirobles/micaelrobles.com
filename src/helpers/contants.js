@@ -66,6 +66,13 @@ export const projects = [
     code: "https://github.com/mikirobles/simple-text-editor"
   },
   {
+    name: "Game of Life",
+    description:
+      "Simple React game made in CodeSandbox.",
+    link: "https://game-of-layf.netlify.app/",
+    code: "https://github.com/mikirobles/game-of-life"
+  },
+  {
     name: "Aerolab Challenge",
     description: "Made with Next.js, a pretty cool challenge.",
     link: "https://mikichallenge.now.sh/",
