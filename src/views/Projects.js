@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../components/Card";
 import Title from "../components/Title";
-import { breakpoints, images, projects, links } from "../helpers/contants";
+import { breakpoints, projects, links } from "../helpers/contants";
 import CloseButton from "../components/CloseButton";
 
 const ProjectsCard = styled(Card)`
