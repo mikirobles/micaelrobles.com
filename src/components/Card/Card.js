@@ -38,7 +38,7 @@ const CardWrapper = styled(CardPosed)`
     width: 100%;
     max-width: 613px;
     min-height: 376px;
-    overflow: scroll;
+    overflow: auto;
     position: relative;
   }
   @media ${breakpoints.mobile} {
