@@ -5,7 +5,7 @@
 ## [Visit the site](https://micaelrobles.com)
 
 Made with React.js, bootstrapped with CRA.  
-Design is inspired my Lucas Pope's games.
+Design was inspired by Lucas Pope's games.
 
 ---
 
