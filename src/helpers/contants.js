@@ -68,7 +68,7 @@ export const projects = [
   {
     name: "Game of Life",
     description:
-      "Simple React game made in CodeSandbox.",
+      "Simple React + Canvas game made in CodeSandbox.",
     link: "https://game-of-layf.netlify.app/",
     code: "https://github.com/mikirobles/game-of-life"
   },
