@@ -71,12 +71,6 @@ export const projects = [
       "Simple React + Canvas game made in CodeSandbox.",
     link: "https://game-of-layf.netlify.app/",
     code: "https://github.com/mikirobles/game-of-life"
-  },
-  {
-    name: "Aerolab Challenge",
-    description: "Made with Next.js, a pretty cool challenge.",
-    link: "https://mikichallenge.now.sh/",
-    code: "https://github.com/mikirobles/aerochallenge"
   }
 ];
 
