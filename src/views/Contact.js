@@ -196,13 +196,13 @@ function Contact() {
         <PoseGroup>
           {screen === screens.initial && (
             <Step key={screens.initial}>
-              <button className="initial-btn" onClick={openContactForm}>
-                Just show me the contact form
-              </button>
-              <span className="separator" />
               <a href="mailto:micael.robles@gmail.com" className="initial-btn">
                 Send me an email
               </a>
+              <span className="separator" />
+              <button className="initial-btn" onClick={openContactForm}>
+                Just show me the contact form
+              </button>
             </Step>
           )}
           {screen === screens.contactForm && (
@@ -221,7 +221,7 @@ function Contact() {
                     .required("Email is required"),
                   message: yup
                     .string()
-                    .min(3, "Message is pretty short")
+                    .min(3, "Message is too short")
                     .required()
                 })}
                 validateOnChange={false}
