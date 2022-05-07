@@ -41,6 +41,9 @@ const ProjectsCard = styled(Card)`
       font-size: 1rem;
       text-decoration: underline;
     }
+    p {
+      white-space: pre-line;
+    }
     .visit {
       text-decoration: none;
       background: var(--egg);
@@ -95,7 +98,7 @@ const Project = ({ name, description, link, code }) => (
   <li key={name}>
     <div className="project">
       <span>{name}</span>
-      <p>{description}</p>
+      <p dangerouslySetInnerHTML={{__html: description}}></p>
       <div className="col">
         {link && (
           <a

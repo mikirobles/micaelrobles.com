@@ -41,6 +41,11 @@ export const links = {
 
 export const projects = [
   {
+    name: "¿Dónde lo miro?",
+    description: `Easily look up on which streaming platform the TV show or movie you want to watch is.<br> This app <strong><a target='_blank' rel='noreferrer' href='${links.twitter}/status/1520957915532001280'>blew up</a></strong> on twitter and got 60k+ users on the first day!`,
+    link: "https://www.dondelomiro.com/"
+  },
+  {
     name: "Vinco",
     description: "Made with Vue.js, has some very cool animations",
     link: "http://vinco.me"
